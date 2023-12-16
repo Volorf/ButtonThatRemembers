@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "finger_print_04.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
