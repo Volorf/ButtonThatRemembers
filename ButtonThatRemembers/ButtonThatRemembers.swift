@@ -60,15 +60,15 @@ struct ButtonThatRemembers: View
         {
             ZStack
             {
-                Text("Button")
-                    .font(.custom("Helvetica", size: 32))
+                Text("Touch Me")
+                    .font(.custom("Helvetica", size: 24))
                     .foregroundStyle(.white)
                 
                 ForEach(fingerPrints, id: \.self) { fingerPrint in
                     FingerTipPrint(position: fingerPrint)
                 }
             }
-            .frame(width: 292, height: 96)
+            .frame(width: 240, height: 72)
             
             .background(Color("Dark Light"))
             .cornerRadius(16)
