@@ -7,18 +7,36 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+struct ContentView: View 
+{
+    var body: some View 
+    {
+        VStack 
+        {
+            Spacer()
+            
+            HStack
+            {
+                Spacer()
+                
+                ButtonThatRemembers()
+                .onTapGesture 
+                {
+                    location in
+                    print("Tapped at \(location)")
+                }
+                
+                Spacer()
+            }
+            
+            Spacer()
         }
-        .padding()
+        .background(Color("Dark"))
+        .ignoresSafeArea()
     }
 }
 
-#Preview {
+#Preview 
+{
     ContentView()
 }
