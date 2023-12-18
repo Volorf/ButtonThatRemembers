@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E42824E22B30DD7E00756D7E /* FingerPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42824E12B30DD7E00756D7E /* FingerPrint.swift */; };
 		E4FD055D2B2D16B500E48225 /* ButtonThatRemembersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD055C2B2D16B500E48225 /* ButtonThatRemembersApp.swift */; };
 		E4FD055F2B2D16B500E48225 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD055E2B2D16B500E48225 /* ContentView.swift */; };
 		E4FD05612B2D16B700E48225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FD05602B2D16B700E48225 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E42824E12B30DD7E00756D7E /* FingerPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerPrint.swift; sourceTree = "<group>"; };
 		E4FD05592B2D16B500E48225 /* ButtonThatRemembers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonThatRemembers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FD055C2B2D16B500E48225 /* ButtonThatRemembersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonThatRemembersApp.swift; sourceTree = "<group>"; };
 		E4FD055E2B2D16B500E48225 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				E4FD05602B2D16B700E48225 /* Assets.xcassets */,
 				E4FD05622B2D16B700E48225 /* Preview Content */,
 				E4FD056A2B2D172A00E48225 /* ButtonThatRemembers.swift */,
+				E42824E12B30DD7E00756D7E /* FingerPrint.swift */,
 			);
 			path = ButtonThatRemembers;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E42824E22B30DD7E00756D7E /* FingerPrint.swift in Sources */,
 				E4FD055F2B2D16B500E48225 /* ContentView.swift in Sources */,
 				E4FD056B2B2D172A00E48225 /* ButtonThatRemembers.swift in Sources */,
 				E4FD055D2B2D16B500E48225 /* ButtonThatRemembersApp.swift in Sources */,

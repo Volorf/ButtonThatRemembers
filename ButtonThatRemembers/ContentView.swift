@@ -14,21 +14,12 @@ struct ContentView: View
         VStack 
         {
             Spacer()
-            
             HStack
             {
                 Spacer()
-                
                 ButtonThatRemembers()
-                .onTapGesture 
-                {
-                    location in
-                    print("Tapped at \(location)")
-                }
-                
                 Spacer()
             }
-            
             Spacer()
         }
         .background(Color("Dark"))
