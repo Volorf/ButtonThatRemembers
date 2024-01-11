@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		E42824E22B30DD7E00756D7E /* FingerPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42824E12B30DD7E00756D7E /* FingerPrint.swift */; };
+		E49240DC2B5083950076C813 /* Keypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49240DB2B5083950076C813 /* Keypad.swift */; };
+		E49240DE2B5087C10076C813 /* KeypadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49240DD2B5087C10076C813 /* KeypadButton.swift */; };
+		E49240E02B50953B0076C813 /* IbmPlexMonoRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E49240DF2B50953B0076C813 /* IbmPlexMonoRegular.ttf */; };
+		E49240E32B5099D20076C813 /* IBMPlexMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E49240E22B5099D20076C813 /* IBMPlexMono-Medium.ttf */; };
 		E4FD055D2B2D16B500E48225 /* ButtonThatRemembersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD055C2B2D16B500E48225 /* ButtonThatRemembersApp.swift */; };
 		E4FD055F2B2D16B500E48225 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD055E2B2D16B500E48225 /* ContentView.swift */; };
 		E4FD05612B2D16B700E48225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FD05602B2D16B700E48225 /* Assets.xcassets */; };
@@ -17,6 +21,11 @@
 
 /* Begin PBXFileReference section */
 		E42824E12B30DD7E00756D7E /* FingerPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerPrint.swift; sourceTree = "<group>"; };
+		E49240DB2B5083950076C813 /* Keypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keypad.swift; sourceTree = "<group>"; };
+		E49240DD2B5087C10076C813 /* KeypadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadButton.swift; sourceTree = "<group>"; };
+		E49240DF2B50953B0076C813 /* IbmPlexMonoRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IbmPlexMonoRegular.ttf; sourceTree = "<group>"; };
+		E49240E12B50955D0076C813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E49240E22B5099D20076C813 /* IBMPlexMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Medium.ttf"; sourceTree = "<group>"; };
 		E4FD05592B2D16B500E48225 /* ButtonThatRemembers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonThatRemembers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FD055C2B2D16B500E48225 /* ButtonThatRemembersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonThatRemembersApp.swift; sourceTree = "<group>"; };
 		E4FD055E2B2D16B500E48225 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,11 +64,16 @@
 		E4FD055B2B2D16B500E48225 /* ButtonThatRemembers */ = {
 			isa = PBXGroup;
 			children = (
+				E49240E22B5099D20076C813 /* IBMPlexMono-Medium.ttf */,
+				E49240DF2B50953B0076C813 /* IbmPlexMonoRegular.ttf */,
+				E49240E12B50955D0076C813 /* Info.plist */,
+				E49240DB2B5083950076C813 /* Keypad.swift */,
 				E4FD055C2B2D16B500E48225 /* ButtonThatRemembersApp.swift */,
 				E4FD055E2B2D16B500E48225 /* ContentView.swift */,
 				E4FD05602B2D16B700E48225 /* Assets.xcassets */,
 				E4FD05622B2D16B700E48225 /* Preview Content */,
 				E4FD056A2B2D172A00E48225 /* ButtonThatRemembers.swift */,
+				E49240DD2B5087C10076C813 /* KeypadButton.swift */,
 				E42824E12B30DD7E00756D7E /* FingerPrint.swift */,
 			);
 			path = ButtonThatRemembers;
@@ -133,6 +147,8 @@
 			files = (
 				E4FD05642B2D16B700E48225 /* Preview Assets.xcassets in Resources */,
 				E4FD05612B2D16B700E48225 /* Assets.xcassets in Resources */,
+				E49240E32B5099D20076C813 /* IBMPlexMono-Medium.ttf in Resources */,
+				E49240E02B50953B0076C813 /* IbmPlexMonoRegular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E42824E22B30DD7E00756D7E /* FingerPrint.swift in Sources */,
+				E49240DE2B5087C10076C813 /* KeypadButton.swift in Sources */,
 				E4FD055F2B2D16B500E48225 /* ContentView.swift in Sources */,
 				E4FD056B2B2D172A00E48225 /* ButtonThatRemembers.swift in Sources */,
+				E49240DC2B5083950076C813 /* Keypad.swift in Sources */,
 				E4FD055D2B2D16B500E48225 /* ButtonThatRemembersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +301,7 @@
 				DEVELOPMENT_TEAM = BW62R7MWZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ButtonThatRemembers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +332,7 @@
 				DEVELOPMENT_TEAM = BW62R7MWZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ButtonThatRemembers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
