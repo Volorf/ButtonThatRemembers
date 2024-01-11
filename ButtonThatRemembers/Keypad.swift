@@ -46,7 +46,7 @@ struct Keypad: View
     
     var body: some View
     {
-        VStack
+        VStack(spacing: 16)
         {
             VStack(spacing: 16)
             {
