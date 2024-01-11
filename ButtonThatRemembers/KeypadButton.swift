@@ -1,9 +1,5 @@
-//
-//  Button.swift
-//  ButtonThatRemembers
-//
-//  Created by Oleg Frolov on 15/12/2023.
-//
+//  KeypadButton.swift
+//  Created by Oleg Frolov on 11/01/2024.
 
 import SwiftUI
 
@@ -69,7 +65,8 @@ struct KeypadButton: View
     }
 }
 
-#Preview {
+#Preview 
+{
     VStack()
     {
         KeypadButton(name: "0", isActive: true, isDisabled: false)
@@ -78,5 +75,4 @@ struct KeypadButton: View
             print(name)
         }
     }
-    
 }

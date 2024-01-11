@@ -1,9 +1,5 @@
-//
 //  Keypad.swift
-//  ButtonThatRemembers
-//
 //  Created by Oleg Frolov on 11/01/2024.
-//
 
 import SwiftUI
 

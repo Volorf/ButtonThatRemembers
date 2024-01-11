@@ -18,7 +18,7 @@ struct ContentView: View
             {
                 Spacer()
 //                ButtonThatRemembers()
-                Keypad().scaleEffect(1.25)
+                Keypad()
                 Spacer()
             }
             Spacer()
