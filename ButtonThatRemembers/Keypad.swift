@@ -58,6 +58,7 @@ struct Keypad: View
                     .font(.custom("IBMPlexMono-Medium", size: 12))
                     .kerning(8)
             }
+            .padding(.leading, 8.0)
             .frame(width: 224, height: 64)
             .foregroundColor(.white)
             
@@ -125,8 +126,12 @@ struct Keypad: View
                     KeypadButton(name: "DEL", isActive: false, isDisabled: false)
                     {
                         name in
-                        text.removeLast()
-                        processTextInput(sign: "")
+                        if (text.count > 0)
+                        {
+                            text.removeLast()
+                            processTextInput(sign: "")
+                        }
+                        
                     }
                     KeypadButton(name: "0", isActive: false, isDisabled: isFull)
                     {
@@ -136,7 +141,7 @@ struct Keypad: View
                     KeypadButton(name: "ENT", isActive: isFull, isDisabled: true)
                     {
                         name in
-                        processTextInput(sign: name)
+//                        processTextInput(sign: name)
                     }
                 }
             }

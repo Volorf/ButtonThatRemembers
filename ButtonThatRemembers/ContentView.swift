@@ -17,7 +17,8 @@ struct ContentView: View
             HStack
             {
                 Spacer()
-                ButtonThatRemembers()
+//                ButtonThatRemembers()
+                Keypad().scaleEffect(1.25)
                 Spacer()
             }
             Spacer()
