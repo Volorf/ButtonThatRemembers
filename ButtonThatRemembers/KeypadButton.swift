@@ -25,14 +25,14 @@ struct KeypadButton: View
                 
                     .font(.custom("IBMPlexMono-Medium", size: 12))
                     .multilineTextAlignment(.center)
-                    .foregroundStyle(isActive ? Color("Dark") : isDisabled ? .white.opacity(0.2) : .white)
+                    .foregroundStyle(isActive ? Color("Dark") : isDisabled ? .white.opacity(0.1) : .white)
                 
                 ForEach(fingerPrints, id: \.self) { fingerPrint in
                     FingerPrint(position: fingerPrint)
                 }
             }
             .frame(width: 64, height: 64)
-            .background(isActive ? Color("Accent") : isDisabled ? .white.opacity(0.05) : .white.opacity(0.1))
+            .background(isActive ? Color("Accent") : isDisabled ? .white.opacity(0.025) : .white.opacity(0.1))
             .cornerRadius(8)
             .scaleEffect(isPressed ? 0.9 : 1)
             .animation(.spring(), value: isPressed)
