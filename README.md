@@ -1,4 +1,4 @@
-# Button that remembers
+# A Button That Remembers
 
 <img src="Gifs/164_A_button_That_Rememebers_Live.gif" width="800px">
 <img src="Gifs/163_Keypad_with_Buttons_that_remember_3.gif" width="800px">

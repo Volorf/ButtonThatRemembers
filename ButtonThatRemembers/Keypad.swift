@@ -10,6 +10,8 @@ struct Keypad: View
     @State private var isEmpty: Bool = true
     @State private var isFull: Bool = false
     
+    private let spacing: Double = 16
+    
     func processTextInput(sign: String)
     {
         text = text + sign
@@ -23,14 +25,10 @@ struct Keypad: View
         case 1:
             displayText = text + "•••"
             isEmpty = false
-            isFull = false
         case 2:
             displayText = text + "••"
-            isEmpty = false
-            isFull = false
         case 3:
             displayText = text + "•"
-            isEmpty = false
             isFull = false
         case 4:
             displayText = text
@@ -46,9 +44,9 @@ struct Keypad: View
     
     var body: some View
     {
-        VStack(spacing: 16)
+        VStack(spacing: spacing)
         {
-            VStack(spacing: 16)
+            VStack(spacing: spacing)
             {
                 Text(displayText)
                     .font(.custom("IBMPlexMono-Medium", size: 12))
@@ -58,20 +56,22 @@ struct Keypad: View
             .frame(width: 224, height: 64)
             .foregroundColor(.white)
             
-            VStack(spacing: 16)
+            VStack(spacing: spacing)
             {
-                HStack(spacing: 16)
+                HStack(spacing: spacing)
                 {
                     KeypadButton(name: "1", isActive: false, isDisabled: isFull)
                     {
                         name in
                         processTextInput(sign: name)
                     }
+                    
                     KeypadButton(name: "2", isActive: false, isDisabled: isFull)
                     {
                         name in
                         processTextInput(sign: name)
                     }
+                    
                     KeypadButton(name: "3", isActive: false, isDisabled: isFull)
                     {
                         name in
@@ -79,18 +79,20 @@ struct Keypad: View
                     }
                 }
                 
-                HStack(spacing: 16)
+                HStack(spacing: spacing)
                 {
                     KeypadButton(name: "4", isActive: false, isDisabled: isFull)
                     {
                         name in
                         processTextInput(sign: name)
                     }
+                    
                     KeypadButton(name: "5", isActive: false, isDisabled: isFull)
                     {
                         name in
                         processTextInput(sign: name)
                     }
+                    
                     KeypadButton(name: "6", isActive: false, isDisabled: isFull)
                     {
                         name in
@@ -98,18 +100,20 @@ struct Keypad: View
                     }
                 }
                 
-                HStack(spacing: 16)
+                HStack(spacing: spacing)
                 {
                     KeypadButton(name: "7", isActive: false, isDisabled: isFull)
                     {
                         name in
                         processTextInput(sign: name)
                     }
+                    
                     KeypadButton(name: "8", isActive: false, isDisabled: isFull)
                     {
                         name in
                         processTextInput(sign: name)
                     }
+                    
                     KeypadButton(name: "9", isActive: false, isDisabled: isFull)
                     {
                         name in
@@ -117,7 +121,7 @@ struct Keypad: View
                     }
                 }
                 
-                HStack(spacing: 16)
+                HStack(spacing: spacing)
                 {
                     KeypadButton(name: "DEL", isActive: false, isDisabled: false)
                     {
@@ -129,15 +133,16 @@ struct Keypad: View
                         }
                         
                     }
+                    
                     KeypadButton(name: "0", isActive: false, isDisabled: isFull)
                     {
                         name in
                         processTextInput(sign: name)
                     }
+                    
                     KeypadButton(name: "ENT", isActive: isFull, isDisabled: true)
                     {
                         name in
-//                        processTextInput(sign: name)
                     }
                 }
             }
