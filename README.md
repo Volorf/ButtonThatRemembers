@@ -10,5 +10,7 @@ If you take a moment to observe the real-world interaction systems around us tha
 
 I made a prototype to understand how the idea might work on touch devices. I slightly exaggerated the "aging" effect. But it felt good. This approach would benefit spatial interaction systems more since it resembled real-world objects' behavior the most.
 
+[Learn More](https://twitter.com/Volorf/status/1737018405201273254)
+
 ## Contact me
 [Twitter](https://www.twitter.com/volorf) | [Linkedin](https://www.linkedin.com/in/oleg-frolov-6a6a4752/) | [Dribbble](https://dribbble.com/Volorf) | [Personal Site](https://olegfrolov.design/)
